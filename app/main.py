@@ -55,7 +55,7 @@ def read_root():
         <div class="card">
             <h1>{app.title}</h1>
             <span class="status">Server Running</span>
-            <div class="version">Version {app.version}</div>
+            <div class="version">Version- {app.version}</div>
         </div>
     </body>
     </html>
