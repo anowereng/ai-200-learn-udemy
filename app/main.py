@@ -1,7 +1,12 @@
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 
-app = FastAPI(title="AI200 API ", version="0.1.0")
+VERSION_HISTORY = [
+    {"version": "0.1.0", "date": "2026-10-03", "changes": "Initial FastAPI app with HTML status page and /health endpoint"},
+    {"version": "0.1.1", "date": "2026-10-03", "changes": "Notes Add"},
+]
+
+app = FastAPI(title="AI200 API ", version=VERSION_HISTORY[-1]["version"])
 
 
 @app.get("/", response_class=HTMLResponse)
