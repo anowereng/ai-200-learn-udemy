@@ -53,7 +53,7 @@ def read_root():
     </head>
     <body>
         <div class="card">
-            <h1>{app.title}</h1>
+            <h1>{app.title }</h1>
             <span class="status">Server Running</span>
             <div class="version">Version- {app.version}</div>
         </div>
